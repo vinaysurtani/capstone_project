@@ -20,7 +20,7 @@ def create_app(test_config=None):
 	@app.route('/')
 	def login_page():
 		return jsonify({
-			'message': Welcome to the casting agency
+			'message': 'Welcome to the casting agency'
 		})
 
 	#@app.route('/login-results')
