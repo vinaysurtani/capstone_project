@@ -17,9 +17,11 @@ def create_app(test_config=None):
 		response.headers.add('Access-Control-Allow-Methods','GET, PATCH, POST, DELETE, OPTIONS')
 		return response
 
-	#@app.route('/')
-	#def login_page():
-	#	return redirect('https://deviz.eu.auth0.com/authorize?audience=casting&scope=SCOPE&response_type=token&client_id=35uylRxGGkf0JJ41bXjUawj25dAN6k34&redirect_uri=https://127.0.0.1:5000/login-results')
+	@app.route('/')
+	def login_page():
+		return jsonify({
+			'message': Welcome to the casting agency
+		})
 
 	#@app.route('/login-results')
 	#def login_result():
