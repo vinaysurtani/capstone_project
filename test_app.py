@@ -17,12 +17,12 @@ class CastingTestCase(unittest.TestCase):
 		db.create_all()
 
 		self.test_movie = {
-			'title': 'New Movie'
+			'title': 'New Movie',
 			'release_date': datetime.date(2020, 4, 27)
 		}
 
 		self.test_actor = {
-			'name': 'John Doe'
+			'name': 'John Doe',
 			'age': 22,
 			'gender': 'Male'
 		}
