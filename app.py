@@ -27,9 +27,9 @@ def create_app(test_config=None):
 	#	session['jwt_token'] = token
 	#	return redirect('/home')
 
-	#@app.route('/home')
-	#def home():
-	#	return 'HELLO'
+	@app.route('/')
+	def home():
+		return 'HELLO'
 
 	@app.route('/actors', methods=['GET'])
 	@requires_auth('get:actors')
